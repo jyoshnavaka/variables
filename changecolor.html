@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1 id="h">hello</h1>
+    <button>change</button>
+    <script>
+ var c=document.getElementsByTagName("button")
+ c[0].addEventListener("click",function (){
+    var a=prompt("enter a week")
+    var b=document.getElementById("h")
+    console.log(a)
+    console.log(b)
+    switch(a){
+        case "monday":
+          b.style.color="red";
+          break;
+          case "tuesday":
+          b.style.color="blue";
+          break;
+          case "wednesday":
+          b.style.color="green";
+          break;
+case "thursday":
+          b.style.color="pink";
+          break;
+case "friday":
+          b.style.color="orange";
+          break;
+case "saturday":
+          b.style.color="yellow";
+          break;
+ case "sunday":
+          b.style.color="violet";
+          
+
+
+}    })
+
+    </script>
+</body>
+</html>

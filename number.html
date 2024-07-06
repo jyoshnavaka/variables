@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <button id="sub">-</button>
+    <button id="num">0</button>
+    <button id="add">+</button>
+    <script>
+        var a=document.getElementById("num")
+        document.getElementById("sub").addEventListener("click",sub)
+        document.getElementById("add").addEventListener("click",add)
+        function add(){
+          a.innerText=+(a.innerText)+1
+          if(0<a.innerText){
+            a.style.color="red"
+           }
+        }
+        function sub(){
+            a.innerText=a.innerText-1
+           
+           if(0>a.innerText){
+            a.style.color="green"
+           }
+        }
+    </script>
+</body>
+</html>

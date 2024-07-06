@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+  <img id="Image"  src="./pic_bulboff.jpeg" width="200" height="200">
+
+  <script>
+    document.getElementById("Image").addEventListener("click",on)
+  function on() {
+    var a = document.getElementById('Image');
+    if (a.src.match("bulboff")) {
+      a.src = "./pic_bulbon.jpeg";
+    } else {
+     a.src = "./pic_bulboff.jpeg";
+    }
+  }
+  </script>
+</body>
+</html>
